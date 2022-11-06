@@ -23,7 +23,11 @@ public class MaximumMain<T> {
         Float number3 = Float.valueOf(2);
         Float number4 = Float.valueOf(90);
         object.comparing(number1, number2, number3,number4);
+
     }
+
+
+
     public static void findingMaxString() {
         System.out.println("\nSorted in ascending order.....................");
         String firstValue = "banana", secondValue = "watermelon", thirdValue = "apple",fourthValue="plum";
