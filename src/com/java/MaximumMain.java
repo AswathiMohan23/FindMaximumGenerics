@@ -5,8 +5,10 @@ public class MaximumMain {
 
         findingMaxInteger();
         findingMaxFloat();
+        findingMaxString();
 
     }
+
     public static void findingMaxInteger() {
         System.out.println("\nFinding max integer.....................");
         Integer number1 = 10, number2 = 30, number3 = 200;
@@ -28,6 +30,16 @@ public class MaximumMain {
             System.out.println(number2+" greater than "+number1+" and "+number3);
         else if((number1.compareTo(number2)>0)&&(number1.compareTo(number3)>0))
             System.out.println(number1+" greater than "+number2+" and "+number3);
+    }
+    public static void findingMaxString() {
+        System.out.println("\nFinding the longest string.....................");
+        String string1="banana",string2="watermelon",string3="apple";
+        if((string3.compareTo(string2)>0)&&(string3.compareTo(string1)>0))
+            System.out.println(string3+" String is longer than the strings "+string2+" and "+string1);
+        else if((string2.compareTo(string1)>0)&&(string2.compareTo(string3)>0))
+            System.out.println(string2+" String is longer than the strings "+string1+" and "+string3);
+        else if((string1.compareTo(string2)>0)&&(string1.compareTo(string3)>0))
+            System.out.println(string1+" String is longer than the strings "+string2+" and "+string3);
     }
 
 }
